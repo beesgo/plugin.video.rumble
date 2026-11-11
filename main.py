@@ -792,6 +792,8 @@ def favorites_show():
 
     try:
 
+        xbmcplugin.setContent(PLUGIN_ID, 'videos')
+
         if favorites:
             for fav in favorites:
 
